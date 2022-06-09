@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TodoList!!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="inner">
+      <section class="header">
+        <h1>TODO</h1>
+        
+      </section>
+      <section class="input">
+        <form class="todo-form" action="">
+          <input class="input-text" type="text" placeholder="할일(todo)을 입력하세요!">
+          <button type="submit"><span class="material-symbols-outlined">
+              done
+            </span></button>
+        </form>
+      </section>
+     
+      <section class="control-menu">
+        <div class="control">
+          <div><button class="left-items"><span class="count">0</span>개의 할일이 남아있어요.</button></div>
+          <div class="control-group">
+            <div><button class="all-items">전체</button></button></div>
+            <div><button class="active-items">진행중</button></div>
+            <div><button class="complete-items">완료</button></div>
+          </div>
+          <div><button class="clear-complete-items">완료 목록 삭제</button></div>
+      </section>
+      <section class="todos-container">
+        <ul class="todos-list">
+          
+        </ul>
+        <div class="noTodoList">할일 목록이 없습니다.</div>
+      </section>
+    </div>
+    <div class="loader loading">
+      <div></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
